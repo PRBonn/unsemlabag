@@ -4,10 +4,10 @@ experiment:
 
 ##Data
 data:
-    name: 'map' # either "pb" or "map"
+    name: 'pb' # either "pb" or "map"
     maps: "./samples/maps/field.png"
     map_out_name: "./results/map_rgb.png"
-    root_dir: "./results/generated"
+    root_dir: "./samples/network"
 
 ##Training
 train:
