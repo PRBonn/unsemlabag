@@ -1,0 +1,22 @@
+*.ckpt
+**/__pycache__/
+/checkpoints/
+/experiments/
+
+# PyCharm stuff
+.idea/
+
+# CMake and PyBind
+geometric_segmentation/CMakeCache.txt
+geometric_segmentation/CMakeFiles/
+geometric_segmentation/segment
+geometric_segmentation/cmake_install.cmake
+geometric_segmentation/**.o
+geometric_segmentation/fig.pnm
+geometric_segmentation/fig.png
+map_rgb.png
+
+# ignore downloaded or generated data
+results/
+archive/
+samples/
