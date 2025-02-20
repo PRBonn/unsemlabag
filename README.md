@@ -4,7 +4,7 @@
     <img src='pics/overview.png'>
     <a href=https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/roggiolani2025frai.pdf>Paper</a>
     <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-    <a href=https://github.com/PRBonn/unsemlab-ag/issues>Contact Us</a>
+    <a href=https://github.com/PRBonn/unsemlabag/issues>Contact Us</a>
   <br />
   <br />
 </div>
