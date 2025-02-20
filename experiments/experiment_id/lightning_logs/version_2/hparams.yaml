@@ -1,0 +1,46 @@
+data:
+  map_out_name: ./results/map_rgb.png
+  maps: ./samples/maps/field.png
+  name: pb
+  root_dir: ./samples/network
+experiment:
+  id: experiment_id
+  seed: 6492
+mapper:
+  class_number: 4
+  ground_resolution:
+  - 0.001
+  - 0.001
+  map_boundary:
+  - 2266
+  - 8750
+  poses:
+  - 3
+  - 8
+model:
+  loss:
+    kl_div_anneal_epochs: 25
+  lr: 0.01
+  num_classes: 4
+  pre-trained: false
+simulator:
+  gsd: 0.001
+  path_to_orthomosaic: None
+  resize_factor: 1
+  resize_flag: false
+  sensor:
+    angle:
+    - 45
+    - 45
+    resolution:
+    - 1024
+    - 1024
+  world_range:
+  - 2266
+  - 8750
+train:
+  batch_size: 4
+  max_epoch: 100
+  n_gpus: 1
+  overfit: false
+  workers: 0

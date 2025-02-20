@@ -1,0 +1,24 @@
+services:
+  unsemlab-ag:
+    build:
+      context: .
+      ssh: ["default"]
+    runtime: nvidia
+    shm_size: '6gb'
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    image: "unsemlab-ag"
+    volumes:
+      # Always mount these
+      - /tmp:/home/user/.cache
+      - /tmp:/tmp
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $SSH_AUTH_SOCK:/ssh-agent
+    environment:
+      - DISPLAY
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [compute,utility,graphics]
+
